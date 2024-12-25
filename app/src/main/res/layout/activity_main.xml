@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="JUGADORES"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary"
+                    android:textSize="34dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextJugador1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/line"
+                    android:drawableLeft="@drawable/icon_close_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Jugador 1"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/primary"
+                    android:textColorLink="@color/primary" />
+
+                <EditText
+                    android:id="@+id/editTextJugador2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/line"
+                    android:drawableLeft="@drawable/icon_circle_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Jugador 2"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/primary"
+                    android:textColorLink="@color/primary" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Iniciar"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo1" />
+    </FrameLayout>
+
+</LinearLayout>

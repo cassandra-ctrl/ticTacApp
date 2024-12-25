@@ -44,7 +44,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextJugador1"
+                    android:id="@+id/etJugador1"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -59,7 +59,7 @@
                     android:textColorLink="@color/primary" />
 
                 <EditText
-                    android:id="@+id/editTextJugador2"
+                    android:id="@+id/etJugador2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -78,6 +78,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/primary"
+                    android:onClick="nextScreen"
                     android:text="Iniciar"
                     android:textSize="24sp" />
             </LinearLayout>

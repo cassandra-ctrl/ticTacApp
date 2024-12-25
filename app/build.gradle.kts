@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.cassandra.tictacapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.cassandra.tictacapp"

@@ -44,7 +44,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/etJugador1"
+                    android:id="@+id/etPlayer1"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -52,14 +52,14 @@
                     android:drawableLeft="@drawable/icon_close_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
-                    android:hint="Jugador 1"
+                    android:hint="Nombre del jugador 1"
                     android:inputType="text"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary"
                     android:textColorLink="@color/primary" />
 
                 <EditText
-                    android:id="@+id/etJugador2"
+                    android:id="@+id/etPlayer2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
@@ -67,7 +67,7 @@
                     android:drawableLeft="@drawable/icon_circle_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
-                    android:hint="Jugador 2"
+                    android:hint="Nombre del jugador 2"
                     android:inputType="text"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary"

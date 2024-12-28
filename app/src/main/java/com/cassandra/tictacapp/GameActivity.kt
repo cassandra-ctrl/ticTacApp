@@ -127,79 +127,79 @@ class GameActivity : AppCompatActivity() {
 
         when(btn.id){
             b1.id-> {
-                if (!b1Val.isEmpty()
-                    && (b1Val.equals(b2Val) && b1Val.equals(b3Val))
-                    || (b1Val.equals(b5Val) && b1Val.equals(b9Val))
-                    || (b1Val.equals(b4Val) && b1Val.equals(b7Val))
+                if (b1Val != ""
+                    && (b1Val == b2Val && b1Val == b3Val)
+                    || (b1Val == b5Val && b1Val == b9Val)
+                    || (b1Val == b4Val && b1Val == b7Val)
                 ) {
                     winner = true
                 }
             }
             b2.id->{
-                if (!b2Val.isEmpty()
-                    && (b2Val.equals(b1Val) && b2Val.equals(b3Val))
-                    || (b2Val.equals(b5Val) && b2Val.equals(b8Val))
+                if (b2Val != ""
+                    && (b2Val == b1Val && b2Val == b3Val)
+                    || (b2Val == b5Val && b2Val == b8Val)
                 ) {
                     winner = true
                 }
             }
             b3.id->{
-                if (!b3Val.isEmpty()
-                    && (b3Val.equals(b1Val) && b3Val.equals(b2Val))
-                    || (b3Val.equals(b6Val) && b3Val.equals(b9Val))
-                    || (b3Val.equals(b5Val) && b3Val.equals(b7Val))
+                if (b3Val != ""
+                    && (b3Val == b1Val && b3Val == b2Val)
+                    || (b3Val == b6Val && b3Val == b9Val)
+                    || (b3Val == b5Val && b3Val == b7Val)
                 ) {
                     winner = true
                 }
             }
             b4.id->{
-                if (!b4Val.isEmpty()
-                    && (b4Val.equals(b1Val) && b4Val.equals(b7Val))
-                    || (b4Val.equals(b5Val) && b4Val.equals(b6Val))
+                if (b4Val != ""
+                    && (b4Val == b1Val && b4Val == b7Val)
+                    || (b4Val == b5Val && b4Val == b6Val)
                 ) {
                     winner = true
                 }
             }
             b5.id->{
-                if (!b5Val.isEmpty()
-                    && (b5Val.equals(b2Val) && b5Val.equals(b8Val))
-                    || (b5Val.equals(b4Val) && b5Val.equals(b6Val))
-                    || (b5Val.equals(b1Val) && b5Val.equals(b9Val))
-                    || (b5Val.equals(b3Val) && b5Val.equals(b7Val))
+                if (b5Val != ""
+                    && (b5Val == b2Val && b5Val == b8Val)
+                    || (b5Val == b4Val && b5Val == b6Val)
+                    || (b5Val == b1Val && b5Val == b9Val)
+                    || (b5Val == b3Val && b5Val == b7Val)
                 ) {
                     winner = true
                 }
             }
             b6.id->{
-                if (!b6Val.isEmpty()
-                    && (b6Val.equals(b3Val) && b6Val.equals(b9Val))
-                    || (b6Val.equals(b4Val) && b6Val.equals(b5Val))
+                if (b6Val != ""
+                    && (b6Val == b3Val && b6Val == b9Val)
+                    || (b6Val == b4Val && b6Val == b5Val)
                 ) {
                     winner = true
                 }
             }
             b7.id->{
-                if (!b7Val.isEmpty()
-                    && (b7Val.equals(b1Val) && b7Val.equals(b4Val))
-                    || (b7Val.equals(b3Val) && b7Val.equals(b5Val))
-                    || (b7Val.equals(b8Val) && b7Val.equals(b9Val))
+                if (b7Val != ""
+                    && (b7Val == b1Val && b7Val == b4Val)
+                    || (b7Val == b3Val && b7Val == b5Val)
+                    || (b7Val == b8Val && b7Val == b9Val)
                 ) {
                     winner = true
                 }
             }
             b8.id->{
-                if (!b8Val.isEmpty()
-                    && (b8Val.equals(b7Val) && b8Val.equals(b9Val))
-                    || (b8Val.equals(b2Val) && b8Val.equals(b5Val))
+                if (b8Val != ""
+                    && (b8Val == b7Val && b8Val == b9Val)
+                    || (b8Val == b2Val && b8Val == b5Val)
                 ) {
                     winner = true
                 }
             }
             b9.id->{
-                if (!b9Val.isEmpty()
-                    && (b9Val.equals(b3Val) && b9Val.equals(b6Val))
-                    || (b9Val.equals(b1Val) && b9Val.equals(b5Val))
-                    || (b9Val.equals(b7Val) && b9Val.equals(b8Val))
+                if (b9Val != ""
+                    && (b9Val == b3Val && b9Val == b6Val)
+                    || (b9Val == b1Val && b9Val == b5Val)
+                    || (b9Val == b7Val && b9Val == b8Val)
                 ) {
                     winner = true
                 }
@@ -229,6 +229,7 @@ class GameActivity : AppCompatActivity() {
         b9.text=""
         gameFinished = false
         jugadorActual = if(jugadorActual == 1) 2 else 1
+        jugadorActual = if(ScoreJugador1 == 0 && ScoreJugador2 == 0) 1 else jugadorActual
         tvPlayer1.setTextColor(if(jugadorActual == 1) Color.BLACK else Color.GRAY)
         tvPlayer2.setTextColor(if(jugadorActual == 2) Color.BLACK else Color.GRAY)
     }
